@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -23,7 +24,7 @@
   align-items: center;
   text-align: center;
 }
-.bgImg img{
+.bgImg img {
   width: 50%;
   object-fit: cover;
   right: 20%;
@@ -66,15 +67,123 @@ nav {
 }
 
 .social {
-   width: 15%;
-  height: 100%; 
+  width: 15%;
+  height: 100%;
   position: relative;
   right: 8%;
 }
 .social img {
   width: 20%;
   height: 60%;
+}
 
+@media screen and (max-width: 1199px) and (min-width: 992px) {
+  .nav-item {
+    position: relative;
+    right: 8%;
+    width: 100%;
+  }
+  .social {
+    position: relative;
+    right: 0%;
+    width: 30%;
+  }
+  .bgImg img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    right: 30%;
+  }
+  .back {
+    background-image: url("./img/background.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+  }
+}
+
+@media screen and (max-width: 991px) and (min-width: 768px) {
+  .nav-item {
+    position: relative;
+    right: 6%;
+    width: 201%;
+  }
+  .social {
+    position: relative;
+    right: 0%;
+    width: 53%;
+  }
+  .bgImg img {
+    width: 110%;
+    height: 100%;
+    position: relative;
+    right: 30%;
+  }
+  .back {
+    background-image: url("./img/background.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+  }
+}
+
+@media screen and (max-width: 1199px) and (min-width: 992px) {
+  .product {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .product h4 {
+    position: absolute;
+    left: 13%;
+    top: 85%;
+  }
+  /* .btn {
+
+  } */
+  .list2 {
+    width: 44%;
+  }
+  .list2 img {
+    position: relative;
+    top: 21%;
+    left: 50%;
+  }
+}
+
+@media screen and (max-width: 991px) and (min-width: 768px) {
+  .product {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .product h4 {
+    position: absolute;
+    left: 13%;
+    top: 85%;
+  }
+  .btn {
+
+  }
+  .list2 {
+    width: 44%;
+  }
+  .list2 img {
+    position: relative;
+    top: 21%;
+    left: 50%;
+  }
 }
 
 .nav-item a {
@@ -115,7 +224,7 @@ nav {
   font-weight: 300;
 }
 .list {
-  width: 36%;
+  width: 50%;
 }
 .list h1 h2 p h4 .btn {
   position: absolute;
@@ -129,29 +238,10 @@ nav {
   top: 21%;
   left: 55%;
 }
-.product h4 {
+.product span {
   font-size: 30px;
   color: white;
   font-weight: 300;
-}
-.product .btn {
-  /* position: absolute;
-  left: 13%;
-  top: 85%; */
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 22%;
-}
-.btn {
-  position: absolute;
-  left: 19%;
-  top: 73%;
-}
-.btn img {
-  padding: 0;
-  width: 20%;
-  margin: 10px;
 }
 
 .mission {
@@ -243,6 +333,93 @@ nav {
   width: 18%;
 }
 
+@media screen and (max-width: 1199px) and (min-width: 992px) {
+  .subProduct {
+    background-image: url("./img/Rectangle\ 3.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+  }
+  .subProduct .section img {
+    position: absolute;
+    top: 200%;
+    left: 7%;
+  }
+  .section {
+    width: 50%;
+  }
+  .section2 {
+    position: absolute;
+    align-items: center;
+    display: flex;
+    left: 48%;
+    bottom: -110%;
+    width: 50%;
+    color: white;
+  }
+  .section2 img {
+    width: 30%;
+    margin: 2%;
+  }
+  .object {
+    position: absolute;
+    align-items: center;
+    display: flex;
+    left: 48%;
+    bottom: -126%;
+    width: 50%;
+    color: white;
+  }
+  .object img {
+    margin: 2%;
+    width: 18%;
+  }
+  .subPro {
+    position: absolute;
+    align-items: center;
+    display: flex;
+    left: 48%;
+    bottom: -140%;
+    width: 50%;
+    color: white;
+  }
+  .subPro img {
+    margin: 2%;
+    width: 13%;
+  }
+  .subPro2 {
+    position: absolute;
+    align-items: center;
+    display: flex;
+    left: 48%;
+    bottom: -156%;
+    width: 50%;
+    color: white;
+  }
+  .subPro2 img {
+    margin: 2%;
+    width: 20%;
+  }
+  .subPro3 {
+    position: absolute;
+    align-items: center;
+    display: flex;
+    left: 48%;
+    bottom: -172%;
+    width: 50%;
+    color: white;
+  }
+  .subPro3 img {
+    margin: 2%;
+    width: 18%;
+  }
+
+
+}
+  
+
 .subPro4 {
   background-image: url("./img/Flag.png");
   background-position: center;
@@ -300,6 +477,68 @@ nav {
   left: 29%;
   top: 83%;
 }
+
+@media screen and (max-width: 1199px) and (min-width: 992px) {
+  .subPro4 {
+    background-image: url("./img/Flag.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 60vh;
+  }
+  .subPro4 h1 {
+    font-size: 20px;
+    color: white;
+    font-weight: 600;
+  }
+  .subPro4 h1 span {
+    font-size: 20px;
+    color: #6a4ba8;
+    font-weight: 600;
+  }
+  .subPro4 p {
+    font-size: 12px;
+    color: white;
+    font-weight: 300;
+  }
+  .list5 {
+    width: 30%;
+    position: relative;
+    top: 30%;
+    left: 12%;
+  }
+  .list5 h1 h2 p h4 .btn {
+    position: absolute;
+    left: 10%;
+  }
+  .list7 {
+    position: absolute;
+    top: 375%;
+    left: 45%;
+  }
+  .list5 h3 {
+    font-size: 18px;
+    color: white;
+    font-weight: 500;
+  }
+  .list5 .btn2 {
+    /* position: absolute;
+  left: 13%;
+  top: 85%; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 22%;
+  }
+  .btn2 {
+    position: absolute;
+    left: 35%;
+    top: 80%;
+  }
+}
+  
+
 /* .list7 img{
   position: absolute;
   top: 100%;
@@ -409,7 +648,7 @@ nav {
     position: absolute;
   } */
 
-  /* @media only screen(max-width: 1199px) and (min-width: 1101px) {
+/* @media only screen(max-width: 1199px) and (min-width: 1101px) {
     .nav-item {
       width: 100%;
       position: relative;
